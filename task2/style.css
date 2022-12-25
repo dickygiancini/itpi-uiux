@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    font-family: 'Inter';
+}
+
+.border {
+    border: solid 1px black;
+}
+
+
+/*
+======================================================
+ MAIN CONTAINER
+======================================================
+*/
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/*
+======================================================
+ SIDEBAR
+======================================================
+*/
+.sidebar {
+    width: 25%;
+    text-align: center;
+    background-color: #181C32;
+    color: white;
+}
+
+.sidebar .row {
+    display: flex;
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+.sidebar .row .wrapper {
+    display: flex;
+    align-items: flex-start;
+    max-height: 100%;
+    width: 75%;
+    flex-direction: column;
+}
+
+.sidebar .row .wrapper h1 {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.col-down {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-12 {
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.sidebar .row .wrapper p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    padding-top: 15px;
+    width: 80%;
+}
+
+.p-4 {
+    padding: 1.5rem;
+}
+
+/*
+======================================================
+ WRAPPER
+======================================================
+*/
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+    max-height: 100%;
+    width: 75%;
+}
+
+
+/*
+======================================================
+ NAVBAR
+======================================================
+*/
+.wrapper .navbar {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.wrapper .navbar h3 {
+    margin: 5px;
+}
+
+/*
+======================================================
+ ROW TOP
+======================================================
+*/
+.wrapper .row-top {
+    display: flex;
+}
+
+.wrapper .row-top .col-top-left {
+    box-sizing: border-box;
+    /* padding: 10px; */
+    width: 50%;
+    background-color: #0FAE53;
+}
+
+.wrapper .row-top .col-top-right {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+    width: 50%;
+    background-color: #009EF7;
+}
+
+.border-thick-white {
+    border: 20px solid white;
+}
+
+.height-100 {
+    height: 100vh;
+}
+
+.items-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper .row-top .col-top-right .col-top-right-item {
+    width: 49%;
+    margin-bottom: 5px;
+}
+
+.card {
+    display: block;
+    padding: 10px;
+    background-color: orangered;
+}
+
+/*
+======================================================
+ MEDIUM SCREEN STYLE
+======================================================
+*/
+@media (max-width: 767.98px) {
+    .sidebar {
+        display: none;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .wrapper .row-top {
+        flex-wrap: wrap;
+    }
+
+    .wrapper .row-top .col-top-left {
+        width: 100%;
+    }
+
+    .wrapper .row-top .col-top-right {
+        width: 100%;
+    }
+
+    .wrapper .row-bottom {
+        flex-wrap: wrap;
+    }
+
+    .wrapper .row-bottom .col-bottom-left {
+        width: 100%;
+    }
+
+    .wrapper .row-bottom .col-bottom-right {
+        width: 100%;
+    }
+}
+
+
+/*
+======================================================
+ SMALL SCREEN STYLE
+======================================================
+*/
+@media (max-width: 575.98px) {
+    .wrapper .row-top .col-top-right .col-top-right-item {
+        width: 100%;
+    }
+}
